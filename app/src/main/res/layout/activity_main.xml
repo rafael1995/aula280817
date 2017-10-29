@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Produto"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Descrição do Produto"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidade:"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioPerecivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Perecível"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioNaoPerecivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="radioClick"
+            android:text="Não perecível"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkbox"
+        android:text="Pode participar de promoções"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLimiteEstoque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkbox"
+        android:text="Pode ter limite de estoque"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLocalRefrigerado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkbox"
+        android:text="Deve ser guardado em local refrigerado"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="checkbox"/>
+
+</LinearLayout>
